@@ -1,14 +1,17 @@
-
 body {
     background-color: #e4e4e4;
+    font-family: sans-serif;
 }
 
+/* main box */
 .container {
     display: flex;
     gap: 10px;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* section utama */
 .kiri {
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -17,12 +20,25 @@ body {
     opacity: 0.999;
 }
 
+/* box input */
 .container-input {
     padding: 10px;
     border-radius: 12px;
     border: 2px solid skyblue;
+    margin-top: 10px;
 }
 
+/* text hasil BMI */
+.hasil {
+    color: #0785c8;
+}
+
+/* auto artikel BMI */
+.article-bmi {
+    text-align: justify;
+}
+
+/* Text for spacing */
 h3 {
     margin: 0%;
 }
@@ -32,6 +48,7 @@ h4 {
     margin-bottom: 0%;
 }
 
+/* section kedua */
 .kanan {
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -41,6 +58,11 @@ h4 {
     text-align: justify;
 }
 
+#section2 {
+    display: none;
+}
+
+/* Hasil BMI */
 .box-kanan-hasil {
     padding: 10px;
     border-radius: 12px;
@@ -50,24 +72,7 @@ h4 {
     text-align: center;
 }
 
-ul {
-    margin-top: 2px;
-    padding-left: 15px;
-}
-
-li {
-    list-style: decimal;
-}
-
-.box-kanan-sakit {
-    padding: 10px;
-    border-radius: 12px;
-    border: 2px solid skyblue;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
+/* button style */
 .button {
     margin-top: 10px;
     background-color: #26aee7;
@@ -78,10 +83,10 @@ li {
     cursor: pointer;
 }
 
-
 .button:hover {
     background-color: #5ea4c1;
 }
+
 .hov-red:hover {
     background-color: #d67d4e;
 }
