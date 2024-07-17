@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
     <title>Calculator BMI</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -15,11 +14,10 @@
         <!-- KIRI -->
         <div class="kiri">
             <h1>Calculator BMI</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, at inventore? Cum sed quibusdam omnis
-                totam!
-                Exercitationem, nam esse asperiores, fugit, in cumque non quidem accusantium voluptatum pariatur
-                excepturi
-                officiis.</p>
+            <p>Berat badan ideal merupakan dambaan setiap orang. Tak hanya memiliki bentuk tubuh yang menunjang
+                penampilan,
+                berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengan Anda? Yuk, hitung sekarang
+                di kalkulator BMI.</p>
 
             <!-- INPUT -->
             <div class="input">
@@ -31,29 +29,32 @@
                 <label for="wanita">Wanita</label><br>
 
                 <!-- Counting -->
-                <label for="berat">Berat Badan(Kg)</label><br>
-                <input type="text" id="berat"><br>
-                <label for="tahun">Usia(tahun)</label><br>
+                <label>Berat Badan(Kg)</label><br>
+                <input type="text" id="weight"><br>
+                <label>Usia(tahun)</label><br>
                 <input type="text" id="tahun"><br>
-                <label for="tinggi">Tinggi Badan(cm)</label><br>
-                <input type="text" id="tinggi"><br>
+                <label>Tinggi Badan(cm)</label><br>
+                <input type="text" id="height"><br>
 
                 <!-- Submit -->
-                <input class="button" type="submit" value="Hitung BMI">
-                <input class="button hov-red" type="submit" value="Reset">
+                <input id="btn" class="button" type="submit" value="Hitung BMI">
+                <input class="button hov-red" type="reset" value="Reset">
+
+
             </div>
             <!-- Article -->
             <h4>Keunggulan Fitur</h4>
-            <br>1. Menghitung
-            <br>2. Mentukan
-            <br>3. Mempersiapkan
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore quibusdam officiis voluptatem
-                culpa
-                non hic similique neque deserunt perspiciatis, eum autem, recusandae aliquam dignissimos ad consectetur
-                illo. Repellat, maiores.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, modi provident architecto vero consequuntur
-                minus dolor vel est suscipit alias quibusdam ea voluptate incidunt id veritatis fuga magnam, sunt esse!
-            </p>
+            <br>1. Menghitung berat badan
+            <br>2. Menentukan kategori berat badan ideal atau tidak
+            <br>3. Mempersiapkan program penurunan berat badan
+            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                mengandalkan pembacaan BMI ini)
+                dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang
+                memenuhi syarat seperti dokter</p>
+            <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks
+                Massa Tubuh (atau BMI) dihitung
+                sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI
+                = Kg/M 2.</p>
         </div>
 
 
@@ -62,9 +63,7 @@
             <h1>Result</h1>
             <!-- Result box -->
             <div class="box-kanan-hasil">
-                <h2>Berat Badan ????</h2>
-                <h1>000</h1>
-                <h3>Anda Memiliki Berat ????</h3>
+                <div id="result"></div>
                 <input class="button" type="submit" value="Download Hasil">
             </div>
 
@@ -78,9 +77,9 @@
             <input class="button" type="submit" value="Konsultasi Ahli Gizi Via Aplikasi">
             <input class="button" type="submit" value="Registrasi Online Ahli Gizi">
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nihil veniam rerum totam labore,
-                    repellat facere officia provident reprehenderit molestias nulla cupiditate illum corporis eligendi
-                    quod accusamus. Doloribus, laboriosam facere?</p>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh mengenai risiko kesehatan dan penyakit seseorang.
+                    Anda memerlukan konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda mengenai berat badan.
+                </p>
             </div>
             <div class="box-kanan-sakit">
                 <ul>Beberapa Penyakit Dari ?????
@@ -97,11 +96,7 @@
 
     </div>
 
-
-
-
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

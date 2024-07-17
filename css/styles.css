@@ -7,7 +7,6 @@ body {
     display: flex;
     gap: 10px;
     flex-direction: row;
-
 }
 
 .kiri {
@@ -18,7 +17,7 @@ body {
     opacity: 0.999;
 }
 
-.input {
+.container-input {
     padding: 10px;
     border-radius: 12px;
     border: 2px solid skyblue;
@@ -39,6 +38,7 @@ h4 {
     border: 2px solid skyblue;
     width: 50%;
     opacity: 0.999;
+    text-align: justify;
 }
 
 .box-kanan-hasil {
@@ -63,6 +63,9 @@ li {
     padding: 10px;
     border-radius: 12px;
     border: 2px solid skyblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .button {
